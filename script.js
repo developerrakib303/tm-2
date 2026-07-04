@@ -269,6 +269,33 @@
     ".testimonial-card"
   );
 
+  /* -------------------- Coverage map pins (tap / click to reveal district) -------------------- */
+  var coveragePins = Array.prototype.slice.call(document.querySelectorAll(".sg-pin"));
+  if (coveragePins.length) {
+    var clearPins = function (except) {
+      coveragePins.forEach(function (p) {
+        if (p !== except) p.classList.remove("is-active");
+      });
+    };
+    var togglePin = function (pin) {
+      var willOpen = !pin.classList.contains("is-active");
+      clearPins(pin);
+      pin.classList.toggle("is-active", willOpen);
+      // bring the active pin to the front so its label isn't covered by later pins
+      if (willOpen && pin.parentNode) pin.parentNode.appendChild(pin);
+    };
+    coveragePins.forEach(function (pin) {
+      pin.addEventListener("click", function () { togglePin(pin); });
+      pin.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); togglePin(pin); }
+      });
+    });
+    // dismiss when tapping/clicking anywhere outside a pin
+    document.addEventListener("click", function (e) {
+      if (!(e.target && e.target.closest && e.target.closest(".sg-pin"))) clearPins(null);
+    });
+  }
+
   /* -------------------- Year in footer -------------------- */
   var yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

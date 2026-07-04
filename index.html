@@ -642,18 +642,18 @@
               <p class="coverage__note"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Typical arrival within 60&ndash;90 minutes for urgent jobs.</p>
               <div class="region-line">Central &middot; East &middot; West &middot; North &middot; North-East</div>
               <div class="chip-cloud" aria-label="Districts we serve">
-                <span class="chip">Bukit Timah</span>
-                <span class="chip">Hougang</span>
-                <span class="chip">Jurong East</span>
-                <span class="chip">Tampines</span>
-                <span class="chip">Woodlands</span>
-                <span class="chip">Bishan</span>
-                <span class="chip">Queenstown</span>
-                <span class="chip">Punggol</span>
-                <span class="chip">Ang Mo Kio</span>
-                <span class="chip">Clementi</span>
-                <span class="chip">Serangoon</span>
-                <span class="chip">Bedok</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Bukit Timah</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Hougang</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Jurong East</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Tampines</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Woodlands</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Bishan</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Queenstown</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Punggol</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Ang Mo Kio</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Clementi</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Serangoon</span>
+                <span class="chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Bedok</span>
               </div>
             </div>
 
@@ -666,6 +666,9 @@
                   </linearGradient>
                   <filter id="sgLandShadow" x="-8%" y="-8%" width="116%" height="128%">
                     <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0b1f2a" flood-opacity="0.13" />
+                  </filter>
+                  <filter id="sgTip" x="-25%" y="-30%" width="150%" height="170%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0b1f2a" flood-opacity="0.3" />
                   </filter>
                 </defs>
                 <rect width="1000" height="560" fill="url(#sgOcean)" />
@@ -682,19 +685,103 @@
                   <text x="180" y="330">WEST</text>
                   <text x="470" y="345">CENTRAL</text>
                 </g>
-                <g class="sg-pins" aria-hidden="true">
-                  <g class="sg-pin" transform="translate(400,298)"><circle class="sg-pin__pulse" r="10" style="animation-delay:0s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(664,239)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.2s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(323,326)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.4s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(784,278)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.6s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(423,90)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.8s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(564,285)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(468,416)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.2s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(695,165)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.4s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(566,241)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.6s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(375,367)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.8s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(614,287)"><circle class="sg-pin__pulse" r="10" style="animation-delay:2s" /><circle class="sg-pin__dot" r="10" /></g>
-                  <g class="sg-pin" transform="translate(748,352)"><circle class="sg-pin__pulse" r="10" style="animation-delay:2.2s" /><circle class="sg-pin__dot" r="10" /></g>
+                <g class="sg-pins">
+                  <g class="sg-pin" transform="translate(400,298)" tabindex="0" role="button" aria-label="Bukit Timah">
+                    <title>Bukit Timah</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:0s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-106.0" y="-86" width="212" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Bukit Timah</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(664,239)" tabindex="0" role="button" aria-label="Hougang">
+                    <title>Hougang</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:.2s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-81.0" y="-86" width="162" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Hougang</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(323,326)" tabindex="0" role="button" aria-label="Jurong East">
+                    <title>Jurong East</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:.4s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-102.0" y="-86" width="204" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Jurong East</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(784,278)" tabindex="0" role="button" aria-label="Tampines">
+                    <title>Tampines</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:.6s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-85.0" y="-86" width="170" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Tampines</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(423,90)" tabindex="0" role="button" aria-label="Woodlands">
+                    <title>Woodlands</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:.8s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-95.5" y="-86" width="191" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Woodlands</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(564,285)" tabindex="0" role="button" aria-label="Bishan">
+                    <title>Bishan</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:1s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-66.0" y="-86" width="132" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Bishan</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(468,416)" tabindex="0" role="button" aria-label="Queenstown">
+                    <title>Queenstown</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:1.2s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-103.5" y="-86" width="207" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Queenstown</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(695,165)" tabindex="0" role="button" aria-label="Punggol">
+                    <title>Punggol</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:1.4s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-75.0" y="-86" width="150" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Punggol</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(566,241)" tabindex="0" role="button" aria-label="Ang Mo Kio">
+                    <title>Ang Mo Kio</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:1.6s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-103.5" y="-86" width="207" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Ang Mo Kio</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(375,367)" tabindex="0" role="button" aria-label="Clementi">
+                    <title>Clementi</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:1.8s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-81.0" y="-86" width="162" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Clementi</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(614,287)" tabindex="0" role="button" aria-label="Serangoon">
+                    <title>Serangoon</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:2s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-92.0" y="-86" width="184" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Serangoon</text></g>
+                  </g>
+                  <g class="sg-pin" transform="translate(748,352)" tabindex="0" role="button" aria-label="Bedok">
+                    <title>Bedok</title>
+                    <circle class="sg-pin__hit" cx="0" cy="-16" r="24" fill="transparent"/>
+                    <circle class="sg-pin__pulse" cx="0" cy="-22" r="13" style="animation-delay:2.2s"/>
+                    <path class="sg-pin__marker" d="M0,0 C-5,-9 -13,-14 -13,-22 A13,13 0 1 1 13,-22 C13,-14 5,-9 0,0 Z"/>
+                    <circle class="sg-pin__core" cx="0" cy="-22" r="5"/>
+                    <g class="sg-pin__tip" aria-hidden="true"><rect class="sg-pin__tipbg" x="-62.5" y="-86" width="125" height="44" rx="10"/><path class="sg-pin__tiparrow" d="M-8,-42 L8,-42 L0,-35 Z"/><text class="sg-pin__tiptext" x="0" y="-57.0">Bedok</text></g>
+                  </g>
                 </g>
                 <g class="sg-compass" aria-hidden="true" transform="translate(940,66)">
                   <circle r="22" /><path d="M0,-13 L5,4 L0,-1 L-5,4 Z" /><text y="-26">N</text>

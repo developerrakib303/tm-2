@@ -1009,13 +1009,17 @@ h1, h2, h3 { margin: 0; }
 .region-line { margin: 24px 0 16px; font-family: "Fraunces", serif; font-weight: 500; font-size: 18px; color: var(--ink); }
 .chip-cloud { display: flex; flex-wrap: wrap; gap: 9px; }
 .chip {
-  padding: 7px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px 7px 11px;
   background: var(--accent-soft);
   border-radius: var(--r-chip);
   font-size: 13.5px;
   font-weight: 600;
   color: var(--accent-deep);
 }
+.chip .ico { width: 15px; height: 15px; flex: none; stroke-width: 1.9; color: var(--accent); }
 .coverage__map {
   position: relative;
   border: var(--hair);
@@ -1029,9 +1033,24 @@ h1, h2, h3 { margin: 0; }
 .sg-land { fill: #ffffff; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; filter: url(#sgLandShadow); }
 .sg-islet { fill: #ffffff; stroke: var(--accent); stroke-width: 1.5; }
 .sg-region text { fill: rgba(23, 38, 46, 0.26); font-family: "Inter", sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 3px; text-anchor: middle; }
-.sg-pin__dot { r: 10; fill: var(--accent); stroke: #fff; stroke-width: 2.5; }
-.sg-pin__pulse { r: 10; fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0; transform-origin: center; transform-box: fill-box; animation: sgpulse 2.6s var(--ease) infinite; }
-@keyframes sgpulse { 0% { transform: scale(0.4); opacity: 0.6; } 100% { transform: scale(2.6); opacity: 0; } }
+.sg-pin { cursor: pointer; }
+.sg-pin:focus { outline: none; }
+.sg-pin__hit { fill: transparent; }
+.sg-pin__marker { fill: var(--accent); stroke: #fff; stroke-width: 2; transition: fill var(--t-fast) var(--ease); }
+.sg-pin__core { fill: #fff; transition: fill var(--t-fast) var(--ease); }
+.sg-pin__pulse { fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0; transform-origin: center; transform-box: fill-box; animation: sgpulse 2.6s var(--ease) infinite; }
+@keyframes sgpulse { 0% { transform: scale(0.4); opacity: 0.55; } 100% { transform: scale(2.4); opacity: 0; } }
+/* name tooltip */
+.sg-pin__tip { opacity: 0; pointer-events: none; transition: opacity var(--t-fast) var(--ease); }
+.sg-pin__tipbg { fill: var(--ink); filter: url(#sgTip); }
+.sg-pin__tiparrow { fill: var(--ink); }
+.sg-pin__tiptext { fill: #fff; font-family: "Inter", sans-serif; font-weight: 600; font-size: 32px; letter-spacing: 0.3px; text-anchor: middle; }
+.sg-pin:hover .sg-pin__tip,
+.sg-pin:focus-visible .sg-pin__tip,
+.sg-pin.is-active .sg-pin__tip { opacity: 1; }
+.sg-pin:hover .sg-pin__marker,
+.sg-pin:focus-visible .sg-pin__marker,
+.sg-pin.is-active .sg-pin__marker { fill: var(--accent-deep); }
 .sg-compass circle { fill: #ffffff; stroke: var(--line); stroke-width: 1.5; }
 .sg-compass path { fill: var(--accent); }
 .sg-compass text { fill: var(--accent-deep); font-family: "Inter", sans-serif; font-weight: 800; font-size: 17px; text-anchor: middle; }
@@ -1691,9 +1710,8 @@ a.contact-line .ico { margin-right: 4px; }
   .verified { flex: none; margin-left: 8px; font-size: 11.5px; }
   .verified .ico { width: 13px; height: 13px; }
 
-  /* coverage map: drop labels/compass/legend, enlarge pins for the small render */
+  /* coverage map: drop labels/compass/legend for the small render */
   .sg-region, .sg-compass, .sg-legend { display: none; }
-  .sg-pin__dot, .sg-pin__pulse { r: 14; }
 }
 
 /* ---- Small phones ---- */
