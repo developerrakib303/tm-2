@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Tech Engineering — Premium Home Appliance & Plumbing Repair in Singapore</title>
+    <meta
+      name="description"
+      content="Prime Tech Engineering — certified Singapore technicians for washing machine, refrigerator and plumbing repair. Same-day service, transparent pricing and a 90-day workmanship warranty."
+    />
+    <meta name="theme-color" content="#0B1F2A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/icons/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- ============================ ICON SPRITE ============================ -->
+    <svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+      <defs>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 0 0-13 0C5.5 15.4 12 21 12 21Z"/><circle cx="12" cy="10.4" r="2.3"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.3 2"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M15.6 21a15.5 15.5 0 0 1-12.6-12.6 2 2 0 0 1 2-2.4h2.6a1.5 1.5 0 0 1 1.5 1.3l.6 3a1.5 1.5 0 0 1-.42 1.4L10.2 11a12 12 0 0 0 3.8 3.8l1.3-1.3a1.5 1.5 0 0 1 1.4-.42l3 .6a1.5 1.5 0 0 1 1.3 1.5V18a2 2 0 0 1-2.4 2Z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.3" y="5.5" width="17.4" height="13" rx="2"/><path d="m4.2 7 7.8 5.6L19.8 7"/></symbol>
+        <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4.2 20 11"/><path d="M6.2 9.6V20h11.6V9.6"/></symbol>
+        <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.4" r="3.7"/><path d="M5.3 19.6a6.7 6.7 0 0 1 13.4 0"/></symbol>
+        <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14M12.5 6l6 6-6 6"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.8 12.6 9.2 17 19.2 6.6"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 5.8v5.2c0 4.5 3 8.3 7 9.5 4-1.2 7-5 7-9.5V5.8L12 3Z"/></symbol>
+        <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3 5 5.8v5.2c0 4.5 3 8.3 7 9.5 4-1.2 7-5 7-9.5V5.8L12 3Z"/><path d="m8.7 11.6 2.3 2.3 4.4-4.7"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="m12 3.2 2.55 5.16 5.7.83-4.12 4.02.97 5.67L12 16.18l-5.09 2.68.97-5.67L3.76 9.2l5.7-.83L12 3.2Z"/></symbol>
+        <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.2 3 5.5 13.2h5.1l-.8 7.8 7.7-10.2h-5.1l.8-7.8Z"/></symbol>
+        <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.4"/><path d="m8.6 13.4-1.6 6.4 5-2.6 5 2.6-1.6-6.4"/></symbol>
+        <symbol id="i-tag" viewBox="0 0 24 24"><path d="M4 12.6V5.6A1.6 1.6 0 0 1 5.6 4h7l7.4 7.4a1.6 1.6 0 0 1 0 2.3l-5.1 5.1a1.6 1.6 0 0 1-2.3 0L4 12.6Z"/><circle cx="8.4" cy="8.4" r="1.25"/></symbol>
+        <symbol id="i-washer" viewBox="0 0 24 24"><rect x="5" y="3.3" width="14" height="17.4" rx="2.2"/><path d="M5 8h14"/><circle cx="12" cy="14.2" r="4.1"/><path d="M9.5 14.2c.9-1 1.9-1 2.8 0s1.9 1 2.8 0"/><circle cx="7.6" cy="5.7" r=".55" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="i-fridge" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.2"/><path d="M6 10h12"/><path d="M9 6v2M9 13v3"/></symbol>
+        <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.8 6.2a4.2 4.2 0 0 0-5.1 5.2L4.4 16.7a1.9 1.9 0 0 0 2.6 2.6l5.3-5.3a4.2 4.2 0 0 0 5.2-5.1l-2.7 2.7-2.2-.5-.5-2.2 2.7-2.7Z"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.2" cy="8.4" r="3.2"/><path d="M3.6 19a5.6 5.6 0 0 1 11.2 0"/><path d="M15.5 5.8a3 3 0 0 1 0 5.6M17.2 19a5.6 5.6 0 0 0-2.6-4.7"/></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 9.6h16M8.4 3.4v4M15.6 3.4v4"/></symbol>
+        <symbol id="i-headset" viewBox="0 0 24 24"><path d="M5 13.2v-1.2a7 7 0 0 1 14 0v1.2"/><rect x="3.4" y="12.6" width="3.6" height="6" rx="1.6"/><rect x="17" y="12.6" width="3.6" height="6" rx="1.6"/><path d="M19 18.6a3.6 3.6 0 0 1-3.6 3H12.5"/></symbol>
+        <symbol id="i-thumb" viewBox="0 0 24 24"><path d="M7.2 10.6 11 3.4a2 2 0 0 1 2 2.1v3.7h5.1a2 2 0 0 1 2 2.4l-1.2 6a2 2 0 0 1-2 1.6H7.2Z"/><path d="M7.2 10.6V20.8H4.6A1.6 1.6 0 0 1 3 19.2v-7A1.6 1.6 0 0 1 4.6 10.6H7.2Z"/></symbol>
+        <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2Z"/><path d="M9 4v14M15 6v14"/></symbol>
+        <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M9.6 6C6.5 7.3 4.8 9.8 4.8 13.2V18h5.1v-5H7.3c0-1.9.9-3.2 2.9-4.1L9.6 6Zm9 0c-3.1 1.3-4.8 3.8-4.8 7.2V18h5.1v-5h-2.6c0-1.9.9-3.2 2.9-4.1L18.6 6Z"/></symbol>
+        <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13.6 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.3-1.4 1.5-1.4h1.4V5.3c-.7-.1-1.5-.2-2.4-.2-2.3 0-3.9 1.4-3.9 4v2.1H7.9v2.8h2.3V21h3.4Z"/></symbol>
+        <symbol id="i-ig" viewBox="0 0 24 24"><rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.6"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.4" cy="7.6" r="1" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20 11.6a7.6 7.6 0 0 1-11.2 6.7L4.4 19.6l1.4-4.3A7.6 7.6 0 1 1 20 11.6Z"/><path d="M9.1 9.1c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4l.5 1.3c.1.2 0 .4-.1.5l-.4.5c.5.9 1.2 1.6 2.1 2.1l.5-.5c.1-.2.4-.2.6-.1l1.3.6"/></symbol>
+        <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 10.2v3.4h4.7c-.2 1.2-1.5 3.6-4.7 3.6a5.2 5.2 0 1 1 3.4-9.2l2.3-2.2A8.5 8.5 0 1 0 20.5 12c0-.6-.06-1-.16-1.8H12Z"/></symbol>
+      </defs>
+    </svg>
+
+    <!-- ============================ TOP BAR ============================ -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__item">
+          <svg aria-hidden="true" focusable="false" class="ico topbar__ico"><use href="#i-pin" /></svg>
+          <span class="topbar__text">Serving all across Singapore</span>
+        </span>
+        <span class="topbar__item topbar__time">
+          <svg aria-hidden="true" focusable="false" class="ico topbar__ico"><use href="#i-clock" /></svg>
+          <span class="topbar__text">Mon &ndash; Sun&nbsp;&middot;&nbsp;8:00 AM &ndash; 8:00 PM</span>
+        </span>
+        <span class="topbar__social">
+          <span class="follow-label">Follow us</span>
+          <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-fb" /></svg></a>
+          <a href="#" aria-label="Instagram"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-ig" /></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wa" /></svg></a>
+          <a href="#" aria-label="Google reviews"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-google" /></svg></a>
+        </span>
+      </div>
+    </div>
+
+    <!-- ============================ HEADER / NAV ============================ -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Prime Tech Engineering home">
+          <svg class="brand__mark" viewBox="0 0 44 44" width="44" height="44" role="img" aria-label="Prime Tech Engineering">
+            <rect width="44" height="44" rx="11" fill="#0E7C74" />
+            <path d="M11 21.6 22 12l11 9.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.6 20.4V31h14.8V20.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22 22.6c2 2.6 3 4.4 3 5.6a3 3 0 0 1-6 0c0-1.2 1-3 3-5.6Z" fill="#fff" />
+          </svg>
+          <span class="brand__text">
+            <strong>Prime Tech</strong>
+            <small>Engineering</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Primary">
+          <a class="active" href="#home"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-home" /></svg><span>Home</span></a>
+          <a href="#services"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-gear" /></svg><span>Services</span></a>
+          <a href="#pricing"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-tag" /></svg><span>Pricing</span></a>
+          <a href="#testimonials"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-star" /></svg><span>Reviews</span></a>
+          <a href="#faq"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-user" /></svg><span>FAQ</span></a>
+          <a href="#contact"><svg aria-hidden="true" focusable="false" class="ico nav-ico"><use href="#i-mail" /></svg><span>Contact</span></a>
+
+          <a class="menu-call" href="tel:+6581234567">
+            <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg>Call +65 8123 4567
+          </a>
+          <div class="menu-social">
+            <span class="menu-social__label">Follow us</span>
+            <div class="menu-social__icons">
+              <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-fb" /></svg></a>
+              <a href="#" aria-label="Instagram"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-ig" /></svg></a>
+              <a href="#" aria-label="WhatsApp"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wa" /></svg></a>
+              <a href="#" aria-label="Google reviews"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-google" /></svg></a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="tel-link" href="tel:+6581234567" aria-label="Call +65 8123 4567">
+            <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg>
+            <span>+65 8123 4567</span>
+          </a>
+          <a class="btn btn--primary btn--sm" href="#contact">Book a Service <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="call-fab" href="tel:+6581234567" aria-label="Call +65 8123 4567">
+          <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="home" tabindex="-1">
+      <!-- ============================ HERO ============================ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__copy reveal">
+            <div class="hero__eyebrow">
+              <span class="kicker"><span class="kicker__rule"></span>Singapore Home-Repair Specialists</span>
+              <span class="seal-tile">
+                <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield-check" /></svg>
+                <span><b>EST.</b> Singapore</span>
+              </span>
+            </div>
+            <h1 id="hero-title">Reliable repair solutions for <span>your home</span>.</h1>
+            <p class="hero__lead">
+              Professional, efficient and affordable repair for your home appliances and plumbing —
+              our certified Singapore technicians are ready today.
+            </p>
+
+            <div class="spec-strip" role="list" aria-label="Service highlights">
+              <div class="spec-strip__cell" role="listitem">
+                <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-bolt" /></svg>
+                <span><b>Same-Day</b><small>Service Available</small></span>
+              </div>
+              <div class="spec-strip__cell" role="listitem">
+                <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-badge" /></svg>
+                <span><b>Certified</b><small>Technicians</small></span>
+              </div>
+              <div class="spec-strip__cell" role="listitem">
+                <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-tag" /></svg>
+                <span><b>Upfront</b><small>Pricing</small></span>
+              </div>
+            </div>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Book a Service <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn--ghost" href="tel:+6581234567">
+                <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg>Call +65 8123 4567
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__media reveal">
+            <div class="hero__frame">
+              <picture class="hero__pic">
+                <source media="(max-width: 640px)" srcset="assets/images/hero-mobile.webp" width="900" height="1600" />
+                <img
+                  class="hero__img"
+                  src="assets/images/hero-technician.webp"
+                  alt="Prime Tech Engineering technician ready to service home appliances"
+                  width="1600" height="900" fetchpriority="high" decoding="async"
+                />
+              </picture>
+              <div class="hero__wash" aria-hidden="true"></div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card__avatars" aria-hidden="true">
+                <img src="assets/images/avatar-jason.webp" alt="" width="40" height="40" loading="lazy" />
+                <img src="assets/images/avatar-sarah.webp" alt="" width="40" height="40" loading="lazy" />
+                <img src="assets/images/avatar-daniel.webp" alt="" width="40" height="40" loading="lazy" />
+              </div>
+              <div class="trust-card__meta">
+                <span class="trust-card__rating">
+                  <svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><b>4.9</b>
+                </span>
+                <small>Rated by 1,000+ Singapore homes</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ SERVICES ============================ -->
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">01</span>&mdash;&nbsp;Our Services</span>
+            <h2 id="services-title">Quality services we provide</h2>
+            <p class="section-lead">A focused range of repair and maintenance services to keep your home running.</p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <div class="service-card__media">
+                <img src="assets/images/service-washing.webp" alt="Technician repairing a washing machine" width="1448" height="1086" loading="lazy" decoding="async" />
+                <span class="price-chip">From&nbsp;$60</span>
+                <span class="service-card__badge"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-washer" /></svg></span>
+              </div>
+              <div class="service-card__body">
+                <h3>Washing Machine Repair</h3>
+                <p>Front load, top load or washer&#8209;dryer &mdash; we repair all types and brands.</p>
+                <a class="link-arrow" href="#pricing">Learn more <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__media">
+                <img src="assets/images/service-fridge.webp" alt="Technician repairing a refrigerator" width="1448" height="1086" loading="lazy" decoding="async" />
+                <span class="price-chip">From&nbsp;$80</span>
+                <span class="service-card__badge"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-fridge" /></svg></span>
+              </div>
+              <div class="service-card__body">
+                <h3>Refrigerator Repair</h3>
+                <p>All brands &mdash; cooling issues, leaks, compressor faults and more.</p>
+                <a class="link-arrow" href="#pricing">Learn more <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__media">
+                <img src="assets/images/service-plumbing.webp" alt="Technician repairing sink plumbing" width="1448" height="1086" loading="lazy" decoding="async" />
+                <span class="price-chip">From&nbsp;$50</span>
+                <span class="service-card__badge"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wrench" /></svg></span>
+              </div>
+              <div class="service-card__body">
+                <h3>Plumbing Services</h3>
+                <p>Leaks, chokes, taps, water heaters and installs &mdash; we&rsquo;ve got you covered.</p>
+                <a class="link-arrow" href="#pricing">Learn more <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ PRICING ============================ -->
+      <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">02</span>&mdash;&nbsp;Transparent Pricing</span>
+            <h2 id="pricing-title">Transparent, upfront pricing</h2>
+            <p class="section-lead">No hidden costs. You approve the quote before we start.</p>
+          </div>
+
+          <div class="price-grid">
+            <article class="price-card reveal">
+              <div class="price-card__head">
+                <span class="price-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-washer" /></svg></span>
+                <h3>Washing Machine</h3>
+              </div>
+              <div class="price-card__price">
+                <span class="from">From</span><span class="amount">$60</span>
+              </div>
+              <p class="price-card__note">Inspection $30 &middot; waived on repair</p>
+              <ul class="price-card__list">
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Upfront quote before work</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Genuine / OEM parts</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>90-day workmanship warranty</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>No fix, no fee</li>
+              </ul>
+              <a class="btn btn--ghost btn--block" href="#contact">Book this</a>
+            </article>
+
+            <article class="price-card price-card--featured reveal">
+              <span class="ribbon">Most Requested</span>
+              <div class="price-card__head">
+                <span class="price-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-fridge" /></svg></span>
+                <h3>Refrigerator</h3>
+              </div>
+              <div class="price-card__price">
+                <span class="from">From</span><span class="amount">$80</span>
+              </div>
+              <p class="price-card__note">Inspection $30 &middot; waived on repair</p>
+              <ul class="price-card__list">
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Upfront quote before work</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Genuine / OEM parts</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>90-day workmanship warranty</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>No fix, no fee</li>
+              </ul>
+              <a class="btn btn--primary btn--block" href="#contact">Book this</a>
+            </article>
+
+            <article class="price-card reveal">
+              <div class="price-card__head">
+                <span class="price-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wrench" /></svg></span>
+                <h3>Plumbing</h3>
+              </div>
+              <div class="price-card__price">
+                <span class="from">From</span><span class="amount">$50</span>
+              </div>
+              <p class="price-card__note">Inspection $30 &middot; waived on repair</p>
+              <ul class="price-card__list">
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Upfront quote before work</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Genuine parts &amp; fittings</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>90-day workmanship warranty</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>No fix, no fee</li>
+              </ul>
+              <a class="btn btn--ghost btn--block" href="#contact">Book this</a>
+            </article>
+          </div>
+
+          <div class="reassure reveal">
+            <span><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Inspection fee waived when you proceed</span>
+            <span><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Parts quoted upfront</span>
+            <span><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Pay after the job</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ WHY + STATS ============================ -->
+      <section class="section why" id="why" aria-labelledby="why-title">
+        <div class="container">
+          <div class="why__top">
+            <div class="why__copy reveal">
+              <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">03</span>&mdash;&nbsp;Why Prime Tech Engineering</span>
+              <h2 id="why-title">We provide the best repair service in <span>Singapore</span></h2>
+              <p>
+                We&rsquo;re committed to the highest quality of work, with customer satisfaction as our
+                top priority on every single job.
+              </p>
+              <a class="btn btn--ghost" href="#guarantee">Our promise <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+
+            <div class="feature-grid reveal">
+              <article class="feature-tile">
+                <svg aria-hidden="true" focusable="false" class="ico feature-tile__ico"><use href="#i-user" /></svg>
+                <h3>Experienced Technicians</h3>
+                <p>Skilled, trained &amp; background&#8209;verified.</p>
+              </article>
+              <article class="feature-tile">
+                <svg aria-hidden="true" focusable="false" class="ico feature-tile__ico"><use href="#i-bolt" /></svg>
+                <h3>Fast &amp; Reliable Service</h3>
+                <p>Same&#8209;day service available.</p>
+              </article>
+              <article class="feature-tile">
+                <svg aria-hidden="true" focusable="false" class="ico feature-tile__ico"><use href="#i-tag" /></svg>
+                <h3>Affordable Pricing</h3>
+                <p>Transparent pricing, no hidden cost.</p>
+              </article>
+              <article class="feature-tile">
+                <svg aria-hidden="true" focusable="false" class="ico feature-tile__ico"><use href="#i-shield-check" /></svg>
+                <h3>Satisfaction Guaranteed</h3>
+                <p>100% customer satisfaction.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="stats-banner reveal">
+            <img class="stats-banner__bg" src="assets/images/stats-singapore.webp" alt="" width="1920" height="819" loading="lazy" decoding="async" />
+            <div class="stats-banner__overlay" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat__tick" aria-hidden="true"></span>
+              <strong data-count="1000" data-suffix="+">1000+</strong>
+              <span class="stat__label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat__tick" aria-hidden="true"></span>
+              <strong data-count="15" data-suffix="+">15+</strong>
+              <span class="stat__label">Expert Technicians</span>
+            </div>
+            <div class="stat">
+              <span class="stat__tick" aria-hidden="true"></span>
+              <strong data-count="5" data-suffix="+">5+</strong>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__tick" aria-hidden="true"></span>
+              <strong>24/7</strong>
+              <span class="stat__label">Support Available</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ PROCESS ============================ -->
+      <section class="section process" id="works" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">04</span>&mdash;&nbsp;How It Works</span>
+            <h2 id="process-title">Our simple working process</h2>
+            <p class="section-lead">From booking to solution, we make it quick, easy and hassle-free.</p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-rail" aria-hidden="true"></div>
+            <article class="process-card reveal">
+              <span class="process-card__num" aria-hidden="true">01</span>
+              <span class="process-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg></span>
+              <h3>Book Your Service</h3>
+              <p>Call us or book online in just a few clicks.</p>
+            </article>
+            <article class="process-card reveal">
+              <span class="process-card__num" aria-hidden="true">02</span>
+              <span class="process-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-user" /></svg></span>
+              <h3>We Arrive On Time</h3>
+              <p>Our technician reaches your location as scheduled.</p>
+            </article>
+            <article class="process-card reveal">
+              <span class="process-card__num" aria-hidden="true">03</span>
+              <span class="process-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wrench" /></svg></span>
+              <h3>Fix The Problem</h3>
+              <p>We diagnose and fix the issue professionally.</p>
+            </article>
+            <article class="process-card reveal">
+              <span class="process-card__num" aria-hidden="true">04</span>
+              <span class="process-card__icon"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield-check" /></svg></span>
+              <h3>Satisfaction Guaranteed</h3>
+              <p>Backed by our 90-day workmanship warranty.</p>
+            </article>
+          </div>
+
+          <div class="highlights reveal" aria-label="Service promises">
+            <div class="highlight">
+              <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-clock" /></svg>
+              <span><b>Quick Response</b><small>We value your time</small></span>
+            </div>
+            <div class="highlight">
+              <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield-check" /></svg>
+              <span><b>Trusted Technicians</b><small>Skilled &amp; verified</small></span>
+            </div>
+            <div class="highlight">
+              <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>
+              <span><b>Quality Service</b><small>Done right the first time</small></span>
+            </div>
+            <div class="highlight">
+              <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-thumb" /></svg>
+              <span><b>100% Satisfaction</b><small>Until you&rsquo;re happy</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ GUARANTEE ============================ -->
+      <section class="guarantee" id="guarantee" aria-labelledby="guarantee-title">
+        <span class="corner corner--tl" aria-hidden="true"></span>
+        <span class="corner corner--tr" aria-hidden="true"></span>
+        <span class="corner corner--bl" aria-hidden="true"></span>
+        <span class="corner corner--br" aria-hidden="true"></span>
+        <div class="container guarantee__inner reveal">
+          <div class="seal" aria-hidden="true">
+            <svg class="seal__ring" viewBox="0 0 120 120">
+              <defs>
+                <path id="sealArc" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" />
+              </defs>
+              <text class="seal__text"><textPath href="#sealArc" startOffset="0">90&#8209;DAY&nbsp;WARRANTY&nbsp;&middot;&nbsp;90&#8209;DAY&nbsp;WARRANTY&nbsp;&middot;&nbsp;</textPath></text>
+            </svg>
+            <span class="seal__core"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield-check" /></svg></span>
+          </div>
+          <div class="guarantee__copy">
+            <h2 id="guarantee-title">Every repair is backed by our 90-day workmanship warranty.</h2>
+            <p>
+              Certified, insured technicians and a no-fix, no-fee promise &mdash; so booking Prime Tech Engineering
+              is a decision you never have to second-guess.
+            </p>
+            <div class="assure-chips">
+              <span class="assure-chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield" /></svg>90-Day Warranty</span>
+              <span class="assure-chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>No-Fix No-Fee</span>
+              <span class="assure-chip"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-badge" /></svg>Licensed &amp; Insured</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ TESTIMONIALS ============================ -->
+      <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">05</span>&mdash;&nbsp;What Clients Say</span>
+            <h2 id="testimonials-title">Trusted by thousands of customers</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <svg aria-hidden="true" focusable="false" class="ico quote-mark"><use href="#i-quote" /></svg>
+              <span class="stars" role="img" aria-label="5 out of 5 stars">
+                <svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg>
+              </span>
+              <p>Very professional and efficient service. The technician was on time and fixed my washing machine perfectly.</p>
+              <div class="person">
+                <img src="assets/images/avatar-jason.webp" alt="" width="52" height="52" loading="lazy" />
+                <span class="person__meta">
+                  <b>Jason Tan</b>
+                  <small><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Bukit Timah</small>
+                </span>
+                <span class="verified"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Verified</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <svg aria-hidden="true" focusable="false" class="ico quote-mark"><use href="#i-quote" /></svg>
+              <span class="stars" role="img" aria-label="5 out of 5 stars">
+                <svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg>
+              </span>
+              <p>My refrigerator was not cooling. They fixed it the same day. Highly recommended!</p>
+              <div class="person">
+                <img src="assets/images/avatar-sarah.webp" alt="" width="52" height="52" loading="lazy" />
+                <span class="person__meta">
+                  <b>Sarah Lim</b>
+                  <small><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Hougang</small>
+                </span>
+                <span class="verified"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Verified</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <svg aria-hidden="true" focusable="false" class="ico quote-mark"><use href="#i-quote" /></svg>
+              <span class="stars" role="img" aria-label="5 out of 5 stars">
+                <svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg><svg aria-hidden="true" focusable="false" class="ico ico--star"><use href="#i-star" /></svg>
+              </span>
+              <p>Excellent plumbing service. Quick response and reasonable pricing. Will definitely call again.</p>
+              <div class="person">
+                <img src="assets/images/avatar-daniel.webp" alt="" width="52" height="52" loading="lazy" />
+                <span class="person__meta">
+                  <b>Daniel Wong</b>
+                  <small><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Jurong East</small>
+                </span>
+                <span class="verified"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Verified</span>
+              </div>
+            </article>
+          </div>
+          <div class="dots"><span class="active"></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <!-- ============================ FAQ ============================ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">06</span>&mdash;&nbsp;Questions</span>
+            <h2 id="faq-title">Questions, answered</h2>
+            <p class="section-lead">Everything you need to know before you book.</p>
+          </div>
+
+          <div class="faq-list reveal">
+            <div class="faq-item is-open">
+              <button class="faq-q" id="faq-btn-1" aria-expanded="true" aria-controls="faq-panel-1">
+                <span>Do you offer same-day service?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                <p>Yes. For most appliance and plumbing jobs we offer same-day slots across Singapore, subject to technician availability. Urgent jobs typically see a technician arrive within 60&ndash;90 minutes.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+                <span>Is there a warranty on repairs?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                <p>Every repair is backed by our 90-day workmanship warranty. If the same fault recurs within 90 days, we return and put it right at no extra labour cost.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+                <span>How is pricing calculated?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                <p>A flat $30 inspection lets our technician diagnose the fault on-site, then you get an upfront fixed quote before any work begins. The $30 is waived when you proceed with the repair &mdash; so you only pay once the job is approved.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+                <span>Which areas do you cover?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                <p>All of Singapore &mdash; Central, East, West, North and North-East, including Bukit Timah, Hougang, Jurong East, Tampines, Woodlands, Bishan, Queenstown and Punggol.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5">
+                <span>Are your technicians certified and insured?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5">
+                <p>Yes. Our technicians are trained, background-verified and fully insured, with 5+ years of average experience across major appliance brands.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-6" aria-expanded="false" aria-controls="faq-panel-6">
+                <span>What if the appliance can&rsquo;t be fixed?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6">
+                <p>No fix, no fee. If we can&rsquo;t resolve the fault, you don&rsquo;t pay for the repair &mdash; and we&rsquo;ll advise honestly on whether a replacement is the smarter option.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" id="faq-btn-7" aria-expanded="false" aria-controls="faq-panel-7">
+                <span>What payment methods do you accept?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a" id="faq-panel-7" role="region" aria-labelledby="faq-btn-7">
+                <p>PayNow, all major cards, and bank transfer. Payment is collected only after the job is done and you&rsquo;re satisfied.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="faq-foot reveal">
+            Still have questions?
+            <a class="link-arrow" href="tel:+6581234567">Call us <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================ SERVICE AREA ============================ -->
+      <section class="section coverage" id="coverage" aria-labelledby="coverage-title">
+        <div class="container">
+          <div class="coverage__top">
+            <div class="coverage__copy reveal">
+              <span class="kicker"><span class="kicker__rule"></span><span class="kicker__idx">07</span>&mdash;&nbsp;Island-wide Coverage</span>
+              <h2 id="coverage-title">We cover all of Singapore</h2>
+              <p>From HDB flats to landed homes, our technicians are dispatched daily across every region of the island.</p>
+              <p class="coverage__note"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Typical arrival within 60&ndash;90 minutes for urgent jobs.</p>
+              <div class="region-line">Central &middot; East &middot; West &middot; North &middot; North-East</div>
+              <div class="chip-cloud" aria-label="Districts we serve">
+                <span class="chip">Bukit Timah</span>
+                <span class="chip">Hougang</span>
+                <span class="chip">Jurong East</span>
+                <span class="chip">Tampines</span>
+                <span class="chip">Woodlands</span>
+                <span class="chip">Bishan</span>
+                <span class="chip">Queenstown</span>
+                <span class="chip">Punggol</span>
+                <span class="chip">Ang Mo Kio</span>
+                <span class="chip">Clementi</span>
+                <span class="chip">Serangoon</span>
+                <span class="chip">Bedok</span>
+              </div>
+            </div>
+
+            <div class="coverage__map reveal">
+              <svg class="sg-map" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="sg-map-title">
+                <title id="sg-map-title">Map of Singapore showing Prime Tech Engineering service coverage across 12 districts</title>
+                <defs>
+                  <linearGradient id="sgOcean" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#eef5f4" /><stop offset="1" stop-color="#e2edea" />
+                  </linearGradient>
+                  <filter id="sgLandShadow" x="-8%" y="-8%" width="116%" height="128%">
+                    <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0b1f2a" flood-opacity="0.13" />
+                  </filter>
+                </defs>
+                <rect width="1000" height="560" fill="url(#sgOcean)" />
+                <g class="sg-grid" aria-hidden="true">
+                  <line x1="125" y1="0" x2="125" y2="560" /><line x1="250" y1="0" x2="250" y2="560" /><line x1="375" y1="0" x2="375" y2="560" /><line x1="500" y1="0" x2="500" y2="560" /><line x1="625" y1="0" x2="625" y2="560" /><line x1="750" y1="0" x2="750" y2="560" /><line x1="875" y1="0" x2="875" y2="560" />
+                  <line x1="0" y1="112" x2="1000" y2="112" /><line x1="0" y1="224" x2="1000" y2="224" /><line x1="0" y1="336" x2="1000" y2="336" /><line x1="0" y1="448" x2="1000" y2="448" />
+                </g>
+                <path class="sg-land" d="M45,425 L70,350 L110,250 L160,150 L227,69 L300,52 L386,41 L445,34 L500,30 L560,36 L620,58 L675,100 L705,145 L755,150 L792,175 L818,207 L865,250 L909,298 L890,345 L852,368 L800,384 L750,402 L680,430 L620,462 L591,482 L545,470 L500,460 L445,452 L386,459 L320,462 L260,455 L227,448 L160,440 L100,432 L60,428 Z" />
+                <ellipse class="sg-islet" cx="492" cy="500" rx="34" ry="11" />
+                <g class="sg-region" aria-hidden="true">
+                  <text x="312" y="120">NORTH</text>
+                  <text x="720" y="205">NORTH-EAST</text>
+                  <text x="835" y="330">EAST</text>
+                  <text x="180" y="330">WEST</text>
+                  <text x="470" y="345">CENTRAL</text>
+                </g>
+                <g class="sg-pins" aria-hidden="true">
+                  <g class="sg-pin" transform="translate(400,298)"><circle class="sg-pin__pulse" r="10" style="animation-delay:0s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(664,239)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.2s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(323,326)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.4s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(784,278)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.6s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(423,90)"><circle class="sg-pin__pulse" r="10" style="animation-delay:.8s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(564,285)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(468,416)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.2s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(695,165)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.4s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(566,241)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.6s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(375,367)"><circle class="sg-pin__pulse" r="10" style="animation-delay:1.8s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(614,287)"><circle class="sg-pin__pulse" r="10" style="animation-delay:2s" /><circle class="sg-pin__dot" r="10" /></g>
+                  <g class="sg-pin" transform="translate(748,352)"><circle class="sg-pin__pulse" r="10" style="animation-delay:2.2s" /><circle class="sg-pin__dot" r="10" /></g>
+                </g>
+                <g class="sg-compass" aria-hidden="true" transform="translate(940,66)">
+                  <circle r="22" /><path d="M0,-13 L5,4 L0,-1 L-5,4 Z" /><text y="-26">N</text>
+                </g>
+                <g class="sg-legend" aria-hidden="true" transform="translate(30,502)">
+                  <circle cx="10" cy="10" r="7" /><text x="28" y="15">Districts we serve</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ CTA ============================ -->
+      <section class="section cta-section" id="contact" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta reveal">
+            <span class="cta__glow" aria-hidden="true"></span>
+            <div class="cta__copy">
+              <span class="cta__status"><span class="cta__pulse" aria-hidden="true"></span>Technicians available now</span>
+              <h2 id="cta-title">Need help today? We&rsquo;re ready.</h2>
+              <p>Book your service now and a licensed technician will be at your doorstep &mdash; often the very same day.</p>
+              <ul class="cta__points">
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>No call-out fee</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>90-day workmanship warranty</li>
+                <li><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-check" /></svg>Upfront, fixed pricing</li>
+              </ul>
+            </div>
+            <div class="cta__panel">
+              <span class="cta__panel-label">Speak to a specialist</span>
+              <a class="cta__phone" href="tel:+6581234567"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-headset" /></svg>+65&nbsp;8123&nbsp;4567</a>
+              <span class="cta__hours"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-clock" /></svg>Mon &ndash; Sun &middot; 8AM &ndash; 8PM</span>
+              <a class="btn btn--primary btn--lg btn--block cta__book" href="tel:+6581234567">Book a Service <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ BRANDS ============================ -->
+      <section class="section brands" aria-labelledby="brands-title">
+        <div class="container">
+          <p class="brands__kicker" id="brands-title"><span class="kicker__idx">08</span>&mdash;&nbsp;Brands We Service</p>
+        </div>
+        <div class="brand-marquee" role="group" aria-label="Appliance brands we repair">
+          <div class="brand-track">
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.77 24.80 4.47" role="img" aria-label="Samsung" focusable="false"><path fill="currentColor" d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 -0.40 24.80 24.80" role="img" aria-label="Bosch" focusable="false"><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.996 5.374 18.626.004 12 0zm0 22.88C5.991 22.88 1.12 18.009 1.12 12S5.991 1.12 12 1.12 22.88 5.991 22.88 12c-.006 6.006-4.874 10.874-10.88 10.88zm4.954-18.374h-.821v4.108h-8.24V4.506h-.847a8.978 8.978 0 0 0 0 14.988h.846v-4.108h8.24v4.108h.822a8.978 8.978 0 0 0 0-14.988zM6.747 17.876a7.86 7.86 0 0 1 0-11.752v11.752zm9.386-3.635h-8.24V9.734h8.24v4.507zm1.12 3.61V6.124a7.882 7.882 0 0 1 0 11.727z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.76 24.80 4.48" role="img" aria-label="Panasonic" focusable="false"><path fill="currentColor" d="M3.157 11.4852c.0399-.6914-.4884-1.2842-1.1798-1.324H0v3.58h1.084v-1.1h.66c.166 0 .333-.02.496-.059.497-.103.87-.52.917-1.025v-.072zm-1.081.005a.35.35 0 0 1-.337.301c-.081.007-.15.007-.23.007h-.425v-.777h.632a.36.36 0 0 1 .36.326.658.658 0 0 1 0 .143zm3.6781 1.45c0-.278-.01-.511-.01-.786a1.654 1.654 0 0 0-.057-.42.666.666 0 0 0-.332-.43 1.046 1.046 0 0 0-.316-.118 2.63 2.63 0 0 0-1.065-.02c-.1.015-.197.043-.29.082a.77.77 0 0 0-.455.5.597.597 0 0 0-.024.261.124.124 0 0 0 .014.048l.86.02a.386.386 0 0 1 .025-.153.262.262 0 0 1 .162-.162.49.49 0 0 1 .342 0 .23.23 0 0 1 .156.157.15.15 0 0 1-.02.13.22.22 0 0 1-.1.078l-.074.024c-.113.03-.228.055-.343.075a6.7928 6.7928 0 0 0-.276.05 3.2483 3.2483 0 0 0-.365.095.787.787 0 0 0-.295.173.621.621 0 0 0-.205.393.792.792 0 0 0 .012.299.71.71 0 0 0 .509.54c.277.084.574.068.841-.043a.83.83 0 0 0 .344-.248c.018.059.038.117.057.176.012.032.03.061.051.087h.948a.414.414 0 0 1-.068-.207c-.0138-.2-.0225-.4004-.026-.601zm-.956-.088a.431.431 0 0 1-.067.193.406.406 0 0 1-.182.145.627.627 0 0 1-.21.054.453.453 0 0 1-.163-.013.244.244 0 0 1-.12-.074.204.204 0 0 1-.057-.106.17.17 0 0 1 .064-.174.314.314 0 0 1 .105-.063c.095-.035.19-.066.288-.093.118-.034.232-.078.342-.131a.907.907 0 0 1 0 .262zm3.262-1.712a1.038 1.038 0 0 0-.755.054 1.662 1.662 0 0 0-.393.262l-.023-.27h-.919v2.559h.982v-1.42a.413.413 0 0 1 .06-.221.383.383 0 0 1 .482-.16c.081.032.142.1.167.183.013.043.02.087.02.131v1.484h1.01v-1.652a1.205 1.205 0 0 0-.06-.394.822.822 0 0 0-.572-.558l.001.002zm5.9501 1.25a1.076 1.076 0 0 0-.42-.231l-.106-.03a4.543 4.543 0 0 0-.58-.122 1.8502 1.8502 0 0 1-.156-.03.3.3 0 0 1-.068-.024.117.117 0 0 1-.059-.152v-.008a.222.222 0 0 1 .131-.105.491.491 0 0 1 .316 0c.107.03.178.133.17.244h.902a.9.9 0 0 0-.055-.31.551.551 0 0 0-.184-.255.848.848 0 0 0-.242-.138 1.196 1.196 0 0 0-.262-.073 2.627 2.627 0 0 0-.642-.037 2.033 2.033 0 0 0-.366.054 1.082 1.082 0 0 0-.444.211.693.693 0 0 0-.28.526.72.72 0 0 0 .052.316.675.675 0 0 0 .393.393c.09.036.183.064.278.082l.554.104c.07.01.138.028.205.051.06.018.103.07.113.131a.19.19 0 0 1-.052.176.304.304 0 0 1-.17.086.492.492 0 0 1-.262-.025.368.368 0 0 1-.105-.061.263.263 0 0 1-.089-.131.41.41 0 0 1-.02-.138h-.932v.055a.773.773 0 0 0 .256.555.99.99 0 0 0 .426.24c.329.098.676.12 1.014.065.16-.023.313-.073.455-.148a.935.935 0 0 0 .176-.118.778.778 0 0 0 .246-.852.632.632 0 0 0-.193-.302v.001zm6.1982-2.226h.957v.676h-.957v-.676zm0 1.024h.957v2.558h-.957v-2.558zm2.872 1.505a1.1666 1.1666 0 0 1-.018.154.393.393 0 0 1-.096.199.299.299 0 0 1-.185.098.364.364 0 0 1-.316-.1.53.53 0 0 1-.152-.26 1.168 1.168 0 0 1 .012-.703.41.41 0 0 1 .178-.232.36.36 0 0 1 .407.017c.092.068.153.17.17.284h.874a.78.78 0 0 0-.09-.417 1.12 1.12 0 0 0-.724-.564 1.711 1.711 0 0 0-.806-.02c-.48.094-.863.456-.984.93a1.383 1.383 0 0 0-.031.621c.023.149.075.291.152.42.095.171.227.32.385.435.189.148.416.239.655.262.18.02.36.012.538-.025a1.24 1.24 0 0 0 .685-.38.928.928 0 0 0 .263-.719h-.917zm-3.704-1.553a1.038 1.038 0 0 0-.755.054 1.656 1.656 0 0 0-.393.262l-.031-.27h-.9181v2.559h.984v-1.428a.425.425 0 0 1 .06-.221.393.393 0 0 1 .484-.16c.08.033.14.1.164.183a.453.453 0 0 1 .021.14v1.483h1.016v-1.652a1.2 1.2 0 0 0-.06-.394.822.822 0 0 0-.572-.558v.002zm-7.8792 1.8c0-.278-.01-.511-.012-.786 0-.142-.018-.283-.054-.42a.675.675 0 0 0-.333-.43 1.056 1.056 0 0 0-.315-.118 2.637 2.637 0 0 0-1.067-.02c-.1.015-.196.043-.289.082a.766.766 0 0 0-.456.5.617.617 0 0 0-.025.261.149.149 0 0 0 .015.048l.86.02a.384.384 0 0 1 .024-.153.262.262 0 0 1 .163-.162.49.49 0 0 1 .342 0 .23.23 0 0 1 .156.157.15.15 0 0 1-.021.13.213.213 0 0 1-.098.078l-.075.024c-.113.03-.228.055-.343.075a6.3141 6.3141 0 0 0-.274.05 3.2042 3.2042 0 0 0-.366.095.762.762 0 0 0-.296.173.617.617 0 0 0-.21.393.753.753 0 0 0 .012.299c.056.26.252.469.508.54.277.084.575.068.842-.043a.808.808 0 0 0 .335-.245c.017.058.036.116.057.173.01.032.029.062.052.087h.948a.418.418 0 0 1-.054-.207 13.4697 13.4697 0 0 1-.026-.601zm-.97-.084a.435.435 0 0 1-.07.189.371.371 0 0 1-.167.145.656.656 0 0 1-.205.054.466.466 0 0 1-.175-.015.248.248 0 0 1-.122-.073.214.214 0 0 1-.055-.105.172.172 0 0 1 .057-.17.344.344 0 0 1 .105-.063 4.83 4.83 0 0 1 .288-.093c.118-.035.233-.079.344-.131.01.087.01.175 0 .262zm5.483-1.72a1.858 1.858 0 0 0-.577 0 1.33 1.33 0 0 0-.747.371 1.21 1.21 0 0 0-.383.798c-.02.185-.003.372.048.551.073.278.239.522.47.693.147.117.32.197.504.235.26.055.527.055.787 0 .184-.038.359-.118.507-.235.23-.17.3961-.415.4681-.693a1.42 1.42 0 0 0 .05-.55 1.208 1.208 0 0 0-.383-.799 1.33 1.33 0 0 0-.743-.37l-.001-.001zm.06 1.814a.388.388 0 0 1-.513.193.371.371 0 0 1-.194-.193.903.903 0 0 1-.072-.246 1.42 1.42 0 0 1 .012-.515.657.657 0 0 1 .1-.247.374.374 0 0 1 .622 0 .627.627 0 0 1 .105.247c.034.17.038.344.01.515a.885.885 0 0 1-.07.246z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.62 24.80 4.77" role="img" aria-label="Siemens" focusable="false"><path fill="currentColor" d="M1.478 10.016c.24 0 .59.046 1.046.14v.726a2.465 2.465 0 0 0-.946-.213c-.41 0-.615.118-.615.354 0 .088.041.16.124.216.069.045.258.14.568.286.446.208.743.388.89.541.176.182.264.417.264.705 0 .415-.172.73-.516.949-.279.176-.64.264-1.085.264-.375 0-.753-.046-1.133-.139v-.755c.41.135.774.203 1.09.203.437 0 .655-.121.655-.362a.302.302 0 0 0-.095-.227c-.065-.065-.232-.155-.5-.27-.481-.208-.795-.384-.94-.53a.999.999 0 0 1-.284-.73c0-.377.137-.666.413-.864.272-.196.626-.294 1.064-.294zm21.19 0c.246 0 .565.04.956.123l.09.016v.727a2.471 2.471 0 0 0-.948-.213c-.409 0-.612.118-.612.354 0 .088.04.16.123.216.066.043.256.139.57.286.443.208.74.388.889.541.176.182.264.417.264.705 0 .415-.172.73-.514.949-.28.176-.643.264-1.087.264-.376 0-.754-.046-1.134-.139v-.755c.407.135.77.203 1.09.203.437 0 .655-.121.655-.362 0-.09-.03-.166-.092-.227-.066-.065-.233-.155-.503-.27-.48-.206-.793-.382-.94-.53a.997.997 0 0 1-.284-.732c0-.376.137-.664.413-.862.272-.196.627-.294 1.064-.294zm-12.674.066l.92 2.444.942-2.444h1.257v3.825h-.968v-2.708l-1.072 2.747h-.632l-1.052-2.747v2.708H8.67v-3.825zm-5.587 0v3.825H3.386v-3.825zm3.554 0v.692H6.327v.864H7.75v.63H6.327v.908h1.677v.73h-2.66v-3.824zm8.707 0v.692h-1.634v.864h1.422v.63h-1.422v.908h1.677v.73H14.05v-3.824zm1.898 0l1.255 2.56v-2.56h.719v3.825h-1.15l-1.288-2.595v2.595h-.72v-3.825z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.49 24.80 5.02" role="img" aria-label="Sony" focusable="false"><path fill="currentColor" d="M8.5505 9.8881c.921 0 1.6574.2303 2.2209.7423.3848.3485.5999.8454.5939 1.3665a1.9081 1.9081 0 0 1-.5939 1.3726c-.5272.4848-1.3483.7423-2.221.7423-.8725 0-1.6785-.2575-2.2148-.7423-.3908-.3485-.609-.8484-.603-1.3726 0-.518.2182-1.015.603-1.3665.5-.4545 1.3847-.7423 2.2149-.7423zm.003 3.6692c.4606 0 .8878-.1606 1.1878-.4575.2999-.2999.4332-.6605.4332-1.1029 0-.4242-.1484-.821-.4333-1.1029-.2938-.2908-.7332-.4545-1.1877-.4545s-.8938.1637-1.1907.4545c-.2848.2818-.4333.6787-.4333 1.103-.006.409.1485.806.4333 1.1029.2969.2939.7332.4575 1.1907.4575zm-4.8418-1.9665c.1605.0424.315.094.4666.1636a1.352 1.352 0 0 1 .3787.2576c.197.206.309.4817.306.7665a.9643.9643 0 0 1-.3787.7788 2.0662 2.0662 0 0 1-.709.3485 3.7231 3.7231 0 0 1-1.1938.1697c-.352 0-.5467-.0406-.8138-.0962l-.077-.016c-.294-.0666-.5817-.1575-.8575-.2787a.0695.0695 0 0 0-.0424-.0121c-.0454 0-.0818.0394-.0818.0848v.203H.1212v-1.4786h.5242a.7559.7559 0 0 0 .1363.418c.2121.2607.4394.3607.6575.4395.3666.1212.7514.1848 1.1362.1969.5526 0 .8756-.134.9455-.163l.009-.0037.0062-.0023c.0616-.0226.3119-.1143.3119-.3916 0-.2743-.2338-.334-.387-.373l-.022-.0058c-.1708-.046-.562-.0872-.9897-.1323l-.1526-.016c-.4848-.0515-.9696-.1273-1.1968-.1758-.4977-.1097-.6942-.2917-.816-.4045l-.0082-.0076A1.0192 1.0192 0 0 1 0 11.1608c0-.497.3394-.797.7575-.9817.4454-.2.9756-.288 1.4392-.288.8211.0031 1.4877.2697 1.727.394.097.0515.1455-.0121.1455-.0606v-.1484h.5272v1.2876h-.4727a.9056.9056 0 0 0-.2939-.4909 1.289 1.289 0 0 0-.297-.1787c-.3968-.1667-.821-.2515-1.2513-.2455-.4423 0-.8665.085-1.0786.2153-.1333.0818-.2.1848-.2.306 0 .1727.1454.2424.2182.2636.1967.0597.6328.103.972.1369.0736.0073.1426.0142.2036.0206.3272.0334 1.012.1243 1.315.2zm18.1673-.9966v-.4787H24v.4696h-.4757c-.1727 0-.2424.0334-.3727.1788l-1.4271 1.63a.098.098 0 0 0-.0182.0698v.7423a1.106 1.106 0 0 0 .0121.103.1496.1496 0 0 0 .1.0909.9368.9368 0 0 0 .1303.009h.4848v.4698h-2.5724v-.4697h.4606a.9343.9343 0 0 0 .1302-.0091.1627.1627 0 0 0 .1031-.091.5626.5626 0 0 0 .009-.1v-.7422c0-.0242 0-.0242-.0333-.0636a606.7592 606.7592 0 0 0-1.4119-1.6028c-.0758-.0788-.2061-.2061-.406-.2061h-.4576v-.4696h2.5876v.4696h-.3121c-.0697 0-.1182.0697-.0576.1455 0 0 .8696 1.0392.8787 1.0513.0091.0122.0152.0122.0273.003.0121-.009.8938-1.0453.8999-1.0543a.0912.0912 0 0 0-.0182-.1273.1095.1095 0 0 0-.0606-.0182zm-6.284-.0031h.4848c.2212 0 .2606.0848.2636.2909l.0273 1.5664-2.5815-2.324H11.944v.4697h.412c.297 0 .3182.1636.3182.309v2.2138c.0004.1285.0009.295-.1818.295h-.506v.4667h2.1634v-.4697h-.5273c-.212 0-.2211-.097-.2242-.303v-1.8816l2.9724 2.6511h.7575l-.0394-2.9966c.003-.218.0182-.2908.2424-.2908h.4726v-.4697H15.595Z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.77 24.80 4.46" role="img" aria-label="Toshiba" focusable="false"><path fill="currentColor" d="M5.174 10.172c-1.065 0-1.578.187-1.65 1.148a8.92 8.92 0 00-.022.68c0 .218.004.451.021.68.073.96.586 1.148 1.65 1.148 1.065 0 1.58-.188 1.653-1.148.018-.229.022-.462.022-.68 0-.217-.005-.451-.022-.68-.073-.96-.588-1.148-1.652-1.148zm3.79 0c-.41 0-.82.04-.985.121-.322.156-.545.38-.545 1.02 0 .375.1.654.293.796.281.21.553.23 1.31.27.305.016.47.078.47.34 0 .332-.294.332-.564.332-.28 0-.366-.025-.46-.096-.084-.063-.105-.176-.106-.348h-.95c0 .487.01.884.47 1.084.41.18 1.67.18 2.048.014.328-.145.563-.337.563-.994 0-.455-.091-.735-.44-.941-.248-.147-.945-.17-1.298-.192-.258-.016-.356-.11-.356-.338 0-.297.285-.308.53-.308.202 0 .34.018.439.105.038.039.086.099.088.307h.947c0-.408-.014-.848-.455-1.051-.175-.08-.587-.121-.998-.121zm2.206.062v3.532h.996v-1.362h1.156v1.362h.996v-3.532h-.996v1.29h-1.156v-1.29h-.996zm4.023 0v3.532h1.002v-3.532h-1.002zm1.891 0v3.532h1.887c.869 0 1.162-.376 1.162-.952 0-.401-.092-.755-.643-.894.444-.114.574-.379.574-.762 0-.776-.487-.924-1.181-.924h-1.799zm4.373 0l-1.068 3.532h1.037l.187-.655h1.16l.19.655H24l-1.07-3.532h-1.473zM0 10.236v.881h1.055v2.65H2.11v-2.65h1.055v-.88H0zm5.174.762c.418 0 .633.063.66.607.004.085.01.201.01.395 0 .195-.006.31-.01.395-.027.544-.242.607-.66.607-.418 0-.633-.063-.66-.607A7.674 7.674 0 014.506 12c0-.194.003-.31.008-.395.027-.544.242-.607.66-.607zm12.906.045h.69c.18 0 .293.085.293.291 0 .176-.112.285-.293.285h-.69v-.576zm4.111.064h.006l.354 1.22h-.713l.353-1.22zm-4.11 1.207h.689c.279 0 .337.124.337.323s-.11.32-.337.32h-.69v-.643z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.66 24.80 4.68" role="img" aria-label="Hitachi" focusable="false"><path fill="currentColor" d="M17.787 11.41h-1.026a.852.852 0 00-.052-.284.714.714 0 00-.459-.427 1.417 1.417 0 00-.913.019.89.89 0 00-.535.542 2.318 2.318 0 00-.04 1.425.88.88 0 00.535.584 1.492 1.492 0 00.977.027.705.705 0 00.428-.384.976.976 0 00.08-.396h1.031a2.198 2.198 0 01-.049.351c-.09.365-.346.672-.684.814a3.254 3.254 0 01-2.251.104c-.477-.15-.89-.493-1.054-.96a2.375 2.375 0 01-.133-.788c0-.388.068-.764.254-1.077.192-.321.486-.569.842-.701a3.062 3.062 0 012.318.063 1.2 1.2 0 01.698.853c.017.076.028.156.033.235zm-3.979 2.436H12.72l-.32-.793h-1.834c-.001.001-.315.794-.319.793h-1.09l1.727-3.693c0 .002 1.199 0 1.199 0l1.725 3.693zm5.483.001h-.977s.005-3.693 0-3.693h.977v1.477h1.976c0 .005-.002-1.478 0-1.477h.979s.003 3.686 0 3.693h-.979v-1.626c0 .005-1.976 0-1.976 0 .002.007 0 1.624 0 1.626zm-18.312 0H0s.005-3.693 0-3.693h.979s-.002 1.487 0 1.477h1.976c0 .005-.004-1.478 0-1.477h.978s.004 3.686 0 3.693h-.978v-1.626c0 .005-1.976 0-1.976 0 0 .007-.002 1.625 0 1.626zm7.531-.001h-.977v-3.065H6.036s.002-.626 0-.627c.002.001 3.971 0 3.971 0v.627H8.51v3.065zm-3.801-3.692h.977v3.692h-.977v-3.692zm18.312 0H24v3.692h-.979v-3.692zm-11.537.627l-.681 1.68h1.361l-.68-1.68z"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 1.22 24.80 21.56" role="img" aria-label="Mitsubishi" focusable="false"><path fill="currentColor" d="M8 22.38H0l4-6.92h8zm8 0h8l-4-6.92h-8zm0-13.84l-4-6.92-4 6.92 4 6.92Z"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 2.60 24.80 18.80" role="img" aria-label="Fujitsu" focusable="false"><path fill="currentColor" d="M16.56 3C14.15 3 12.04 4.24 10.68 5.97L10.68 9.76C12.5 4.71 16.56 5.08 16.56 5.08C19.5 5.08 21.84 7.38 21.84 10.2C21.84 13.04 19.5 15.33 16.56 15.33A5.32 5.32 0 0 1 12.84 13.83L10.28 11.03A6.06 6.06 0 0 0 6.03 9.32C2.7 9.32 0 11.93 0 15.16C0 18.4 2.7 21 6.03 21C7.9 21 9.58 20.19 10.68 18.89L10.68 15.86C8.88 19.29 6.03 18.92 6.03 18.92C3.9 18.92 2.17 17.24 2.17 15.16C2.17 13.1 3.9 11.42 6.03 11.42C7.09 11.42 8.05 11.84 8.75 12.5L11.31 15.31A7.5 7.5 0 0 0 16.56 17.43C20.67 17.43 24 14.19 24 10.2C24 6.21 20.67 3 16.56 3Z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.77 24.80 4.47" aria-hidden="true" focusable="false"><path fill="currentColor" d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 -0.40 24.80 24.80" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.996 5.374 18.626.004 12 0zm0 22.88C5.991 22.88 1.12 18.009 1.12 12S5.991 1.12 12 1.12 22.88 5.991 22.88 12c-.006 6.006-4.874 10.874-10.88 10.88zm4.954-18.374h-.821v4.108h-8.24V4.506h-.847a8.978 8.978 0 0 0 0 14.988h.846v-4.108h8.24v4.108h.822a8.978 8.978 0 0 0 0-14.988zM6.747 17.876a7.86 7.86 0 0 1 0-11.752v11.752zm9.386-3.635h-8.24V9.734h8.24v4.507zm1.12 3.61V6.124a7.882 7.882 0 0 1 0 11.727z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.76 24.80 4.48" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.157 11.4852c.0399-.6914-.4884-1.2842-1.1798-1.324H0v3.58h1.084v-1.1h.66c.166 0 .333-.02.496-.059.497-.103.87-.52.917-1.025v-.072zm-1.081.005a.35.35 0 0 1-.337.301c-.081.007-.15.007-.23.007h-.425v-.777h.632a.36.36 0 0 1 .36.326.658.658 0 0 1 0 .143zm3.6781 1.45c0-.278-.01-.511-.01-.786a1.654 1.654 0 0 0-.057-.42.666.666 0 0 0-.332-.43 1.046 1.046 0 0 0-.316-.118 2.63 2.63 0 0 0-1.065-.02c-.1.015-.197.043-.29.082a.77.77 0 0 0-.455.5.597.597 0 0 0-.024.261.124.124 0 0 0 .014.048l.86.02a.386.386 0 0 1 .025-.153.262.262 0 0 1 .162-.162.49.49 0 0 1 .342 0 .23.23 0 0 1 .156.157.15.15 0 0 1-.02.13.22.22 0 0 1-.1.078l-.074.024c-.113.03-.228.055-.343.075a6.7928 6.7928 0 0 0-.276.05 3.2483 3.2483 0 0 0-.365.095.787.787 0 0 0-.295.173.621.621 0 0 0-.205.393.792.792 0 0 0 .012.299.71.71 0 0 0 .509.54c.277.084.574.068.841-.043a.83.83 0 0 0 .344-.248c.018.059.038.117.057.176.012.032.03.061.051.087h.948a.414.414 0 0 1-.068-.207c-.0138-.2-.0225-.4004-.026-.601zm-.956-.088a.431.431 0 0 1-.067.193.406.406 0 0 1-.182.145.627.627 0 0 1-.21.054.453.453 0 0 1-.163-.013.244.244 0 0 1-.12-.074.204.204 0 0 1-.057-.106.17.17 0 0 1 .064-.174.314.314 0 0 1 .105-.063c.095-.035.19-.066.288-.093.118-.034.232-.078.342-.131a.907.907 0 0 1 0 .262zm3.262-1.712a1.038 1.038 0 0 0-.755.054 1.662 1.662 0 0 0-.393.262l-.023-.27h-.919v2.559h.982v-1.42a.413.413 0 0 1 .06-.221.383.383 0 0 1 .482-.16c.081.032.142.1.167.183.013.043.02.087.02.131v1.484h1.01v-1.652a1.205 1.205 0 0 0-.06-.394.822.822 0 0 0-.572-.558l.001.002zm5.9501 1.25a1.076 1.076 0 0 0-.42-.231l-.106-.03a4.543 4.543 0 0 0-.58-.122 1.8502 1.8502 0 0 1-.156-.03.3.3 0 0 1-.068-.024.117.117 0 0 1-.059-.152v-.008a.222.222 0 0 1 .131-.105.491.491 0 0 1 .316 0c.107.03.178.133.17.244h.902a.9.9 0 0 0-.055-.31.551.551 0 0 0-.184-.255.848.848 0 0 0-.242-.138 1.196 1.196 0 0 0-.262-.073 2.627 2.627 0 0 0-.642-.037 2.033 2.033 0 0 0-.366.054 1.082 1.082 0 0 0-.444.211.693.693 0 0 0-.28.526.72.72 0 0 0 .052.316.675.675 0 0 0 .393.393c.09.036.183.064.278.082l.554.104c.07.01.138.028.205.051.06.018.103.07.113.131a.19.19 0 0 1-.052.176.304.304 0 0 1-.17.086.492.492 0 0 1-.262-.025.368.368 0 0 1-.105-.061.263.263 0 0 1-.089-.131.41.41 0 0 1-.02-.138h-.932v.055a.773.773 0 0 0 .256.555.99.99 0 0 0 .426.24c.329.098.676.12 1.014.065.16-.023.313-.073.455-.148a.935.935 0 0 0 .176-.118.778.778 0 0 0 .246-.852.632.632 0 0 0-.193-.302v.001zm6.1982-2.226h.957v.676h-.957v-.676zm0 1.024h.957v2.558h-.957v-2.558zm2.872 1.505a1.1666 1.1666 0 0 1-.018.154.393.393 0 0 1-.096.199.299.299 0 0 1-.185.098.364.364 0 0 1-.316-.1.53.53 0 0 1-.152-.26 1.168 1.168 0 0 1 .012-.703.41.41 0 0 1 .178-.232.36.36 0 0 1 .407.017c.092.068.153.17.17.284h.874a.78.78 0 0 0-.09-.417 1.12 1.12 0 0 0-.724-.564 1.711 1.711 0 0 0-.806-.02c-.48.094-.863.456-.984.93a1.383 1.383 0 0 0-.031.621c.023.149.075.291.152.42.095.171.227.32.385.435.189.148.416.239.655.262.18.02.36.012.538-.025a1.24 1.24 0 0 0 .685-.38.928.928 0 0 0 .263-.719h-.917zm-3.704-1.553a1.038 1.038 0 0 0-.755.054 1.656 1.656 0 0 0-.393.262l-.031-.27h-.9181v2.559h.984v-1.428a.425.425 0 0 1 .06-.221.393.393 0 0 1 .484-.16c.08.033.14.1.164.183a.453.453 0 0 1 .021.14v1.483h1.016v-1.652a1.2 1.2 0 0 0-.06-.394.822.822 0 0 0-.572-.558v.002zm-7.8792 1.8c0-.278-.01-.511-.012-.786 0-.142-.018-.283-.054-.42a.675.675 0 0 0-.333-.43 1.056 1.056 0 0 0-.315-.118 2.637 2.637 0 0 0-1.067-.02c-.1.015-.196.043-.289.082a.766.766 0 0 0-.456.5.617.617 0 0 0-.025.261.149.149 0 0 0 .015.048l.86.02a.384.384 0 0 1 .024-.153.262.262 0 0 1 .163-.162.49.49 0 0 1 .342 0 .23.23 0 0 1 .156.157.15.15 0 0 1-.021.13.213.213 0 0 1-.098.078l-.075.024c-.113.03-.228.055-.343.075a6.3141 6.3141 0 0 0-.274.05 3.2042 3.2042 0 0 0-.366.095.762.762 0 0 0-.296.173.617.617 0 0 0-.21.393.753.753 0 0 0 .012.299c.056.26.252.469.508.54.277.084.575.068.842-.043a.808.808 0 0 0 .335-.245c.017.058.036.116.057.173.01.032.029.062.052.087h.948a.418.418 0 0 1-.054-.207 13.4697 13.4697 0 0 1-.026-.601zm-.97-.084a.435.435 0 0 1-.07.189.371.371 0 0 1-.167.145.656.656 0 0 1-.205.054.466.466 0 0 1-.175-.015.248.248 0 0 1-.122-.073.214.214 0 0 1-.055-.105.172.172 0 0 1 .057-.17.344.344 0 0 1 .105-.063 4.83 4.83 0 0 1 .288-.093c.118-.035.233-.079.344-.131.01.087.01.175 0 .262zm5.483-1.72a1.858 1.858 0 0 0-.577 0 1.33 1.33 0 0 0-.747.371 1.21 1.21 0 0 0-.383.798c-.02.185-.003.372.048.551.073.278.239.522.47.693.147.117.32.197.504.235.26.055.527.055.787 0 .184-.038.359-.118.507-.235.23-.17.3961-.415.4681-.693a1.42 1.42 0 0 0 .05-.55 1.208 1.208 0 0 0-.383-.799 1.33 1.33 0 0 0-.743-.37l-.001-.001zm.06 1.814a.388.388 0 0 1-.513.193.371.371 0 0 1-.194-.193.903.903 0 0 1-.072-.246 1.42 1.42 0 0 1 .012-.515.657.657 0 0 1 .1-.247.374.374 0 0 1 .622 0 .627.627 0 0 1 .105.247c.034.17.038.344.01.515a.885.885 0 0 1-.07.246z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.62 24.80 4.77" aria-hidden="true" focusable="false"><path fill="currentColor" d="M1.478 10.016c.24 0 .59.046 1.046.14v.726a2.465 2.465 0 0 0-.946-.213c-.41 0-.615.118-.615.354 0 .088.041.16.124.216.069.045.258.14.568.286.446.208.743.388.89.541.176.182.264.417.264.705 0 .415-.172.73-.516.949-.279.176-.64.264-1.085.264-.375 0-.753-.046-1.133-.139v-.755c.41.135.774.203 1.09.203.437 0 .655-.121.655-.362a.302.302 0 0 0-.095-.227c-.065-.065-.232-.155-.5-.27-.481-.208-.795-.384-.94-.53a.999.999 0 0 1-.284-.73c0-.377.137-.666.413-.864.272-.196.626-.294 1.064-.294zm21.19 0c.246 0 .565.04.956.123l.09.016v.727a2.471 2.471 0 0 0-.948-.213c-.409 0-.612.118-.612.354 0 .088.04.16.123.216.066.043.256.139.57.286.443.208.74.388.889.541.176.182.264.417.264.705 0 .415-.172.73-.514.949-.28.176-.643.264-1.087.264-.376 0-.754-.046-1.134-.139v-.755c.407.135.77.203 1.09.203.437 0 .655-.121.655-.362 0-.09-.03-.166-.092-.227-.066-.065-.233-.155-.503-.27-.48-.206-.793-.382-.94-.53a.997.997 0 0 1-.284-.732c0-.376.137-.664.413-.862.272-.196.627-.294 1.064-.294zm-12.674.066l.92 2.444.942-2.444h1.257v3.825h-.968v-2.708l-1.072 2.747h-.632l-1.052-2.747v2.708H8.67v-3.825zm-5.587 0v3.825H3.386v-3.825zm3.554 0v.692H6.327v.864H7.75v.63H6.327v.908h1.677v.73h-2.66v-3.824zm8.707 0v.692h-1.634v.864h1.422v.63h-1.422v.908h1.677v.73H14.05v-3.824zm1.898 0l1.255 2.56v-2.56h.719v3.825h-1.15l-1.288-2.595v2.595h-.72v-3.825z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.49 24.80 5.02" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.5505 9.8881c.921 0 1.6574.2303 2.2209.7423.3848.3485.5999.8454.5939 1.3665a1.9081 1.9081 0 0 1-.5939 1.3726c-.5272.4848-1.3483.7423-2.221.7423-.8725 0-1.6785-.2575-2.2148-.7423-.3908-.3485-.609-.8484-.603-1.3726 0-.518.2182-1.015.603-1.3665.5-.4545 1.3847-.7423 2.2149-.7423zm.003 3.6692c.4606 0 .8878-.1606 1.1878-.4575.2999-.2999.4332-.6605.4332-1.1029 0-.4242-.1484-.821-.4333-1.1029-.2938-.2908-.7332-.4545-1.1877-.4545s-.8938.1637-1.1907.4545c-.2848.2818-.4333.6787-.4333 1.103-.006.409.1485.806.4333 1.1029.2969.2939.7332.4575 1.1907.4575zm-4.8418-1.9665c.1605.0424.315.094.4666.1636a1.352 1.352 0 0 1 .3787.2576c.197.206.309.4817.306.7665a.9643.9643 0 0 1-.3787.7788 2.0662 2.0662 0 0 1-.709.3485 3.7231 3.7231 0 0 1-1.1938.1697c-.352 0-.5467-.0406-.8138-.0962l-.077-.016c-.294-.0666-.5817-.1575-.8575-.2787a.0695.0695 0 0 0-.0424-.0121c-.0454 0-.0818.0394-.0818.0848v.203H.1212v-1.4786h.5242a.7559.7559 0 0 0 .1363.418c.2121.2607.4394.3607.6575.4395.3666.1212.7514.1848 1.1362.1969.5526 0 .8756-.134.9455-.163l.009-.0037.0062-.0023c.0616-.0226.3119-.1143.3119-.3916 0-.2743-.2338-.334-.387-.373l-.022-.0058c-.1708-.046-.562-.0872-.9897-.1323l-.1526-.016c-.4848-.0515-.9696-.1273-1.1968-.1758-.4977-.1097-.6942-.2917-.816-.4045l-.0082-.0076A1.0192 1.0192 0 0 1 0 11.1608c0-.497.3394-.797.7575-.9817.4454-.2.9756-.288 1.4392-.288.8211.0031 1.4877.2697 1.727.394.097.0515.1455-.0121.1455-.0606v-.1484h.5272v1.2876h-.4727a.9056.9056 0 0 0-.2939-.4909 1.289 1.289 0 0 0-.297-.1787c-.3968-.1667-.821-.2515-1.2513-.2455-.4423 0-.8665.085-1.0786.2153-.1333.0818-.2.1848-.2.306 0 .1727.1454.2424.2182.2636.1967.0597.6328.103.972.1369.0736.0073.1426.0142.2036.0206.3272.0334 1.012.1243 1.315.2zm18.1673-.9966v-.4787H24v.4696h-.4757c-.1727 0-.2424.0334-.3727.1788l-1.4271 1.63a.098.098 0 0 0-.0182.0698v.7423a1.106 1.106 0 0 0 .0121.103.1496.1496 0 0 0 .1.0909.9368.9368 0 0 0 .1303.009h.4848v.4698h-2.5724v-.4697h.4606a.9343.9343 0 0 0 .1302-.0091.1627.1627 0 0 0 .1031-.091.5626.5626 0 0 0 .009-.1v-.7422c0-.0242 0-.0242-.0333-.0636a606.7592 606.7592 0 0 0-1.4119-1.6028c-.0758-.0788-.2061-.2061-.406-.2061h-.4576v-.4696h2.5876v.4696h-.3121c-.0697 0-.1182.0697-.0576.1455 0 0 .8696 1.0392.8787 1.0513.0091.0122.0152.0122.0273.003.0121-.009.8938-1.0453.8999-1.0543a.0912.0912 0 0 0-.0182-.1273.1095.1095 0 0 0-.0606-.0182zm-6.284-.0031h.4848c.2212 0 .2606.0848.2636.2909l.0273 1.5664-2.5815-2.324H11.944v.4697h.412c.297 0 .3182.1636.3182.309v2.2138c.0004.1285.0009.295-.1818.295h-.506v.4667h2.1634v-.4697h-.5273c-.212 0-.2211-.097-.2242-.303v-1.8816l2.9724 2.6511h.7575l-.0394-2.9966c.003-.218.0182-.2908.2424-.2908h.4726v-.4697H15.595Z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.77 24.80 4.46" aria-hidden="true" focusable="false"><path fill="currentColor" d="M5.174 10.172c-1.065 0-1.578.187-1.65 1.148a8.92 8.92 0 00-.022.68c0 .218.004.451.021.68.073.96.586 1.148 1.65 1.148 1.065 0 1.58-.188 1.653-1.148.018-.229.022-.462.022-.68 0-.217-.005-.451-.022-.68-.073-.96-.588-1.148-1.652-1.148zm3.79 0c-.41 0-.82.04-.985.121-.322.156-.545.38-.545 1.02 0 .375.1.654.293.796.281.21.553.23 1.31.27.305.016.47.078.47.34 0 .332-.294.332-.564.332-.28 0-.366-.025-.46-.096-.084-.063-.105-.176-.106-.348h-.95c0 .487.01.884.47 1.084.41.18 1.67.18 2.048.014.328-.145.563-.337.563-.994 0-.455-.091-.735-.44-.941-.248-.147-.945-.17-1.298-.192-.258-.016-.356-.11-.356-.338 0-.297.285-.308.53-.308.202 0 .34.018.439.105.038.039.086.099.088.307h.947c0-.408-.014-.848-.455-1.051-.175-.08-.587-.121-.998-.121zm2.206.062v3.532h.996v-1.362h1.156v1.362h.996v-3.532h-.996v1.29h-1.156v-1.29h-.996zm4.023 0v3.532h1.002v-3.532h-1.002zm1.891 0v3.532h1.887c.869 0 1.162-.376 1.162-.952 0-.401-.092-.755-.643-.894.444-.114.574-.379.574-.762 0-.776-.487-.924-1.181-.924h-1.799zm4.373 0l-1.068 3.532h1.037l.187-.655h1.16l.19.655H24l-1.07-3.532h-1.473zM0 10.236v.881h1.055v2.65H2.11v-2.65h1.055v-.88H0zm5.174.762c.418 0 .633.063.66.607.004.085.01.201.01.395 0 .195-.006.31-.01.395-.027.544-.242.607-.66.607-.418 0-.633-.063-.66-.607A7.674 7.674 0 014.506 12c0-.194.003-.31.008-.395.027-.544.242-.607.66-.607zm12.906.045h.69c.18 0 .293.085.293.291 0 .176-.112.285-.293.285h-.69v-.576zm4.111.064h.006l.354 1.22h-.713l.353-1.22zm-4.11 1.207h.689c.279 0 .337.124.337.323s-.11.32-.337.32h-.69v-.643z"/></svg>
+            </div>
+            <div class="brand-logo">
+              <svg class="brand-logo__svg" viewBox="-0.40 9.66 24.80 4.68" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.787 11.41h-1.026a.852.852 0 00-.052-.284.714.714 0 00-.459-.427 1.417 1.417 0 00-.913.019.89.89 0 00-.535.542 2.318 2.318 0 00-.04 1.425.88.88 0 00.535.584 1.492 1.492 0 00.977.027.705.705 0 00.428-.384.976.976 0 00.08-.396h1.031a2.198 2.198 0 01-.049.351c-.09.365-.346.672-.684.814a3.254 3.254 0 01-2.251.104c-.477-.15-.89-.493-1.054-.96a2.375 2.375 0 01-.133-.788c0-.388.068-.764.254-1.077.192-.321.486-.569.842-.701a3.062 3.062 0 012.318.063 1.2 1.2 0 01.698.853c.017.076.028.156.033.235zm-3.979 2.436H12.72l-.32-.793h-1.834c-.001.001-.315.794-.319.793h-1.09l1.727-3.693c0 .002 1.199 0 1.199 0l1.725 3.693zm5.483.001h-.977s.005-3.693 0-3.693h.977v1.477h1.976c0 .005-.002-1.478 0-1.477h.979s.003 3.686 0 3.693h-.979v-1.626c0 .005-1.976 0-1.976 0 .002.007 0 1.624 0 1.626zm-18.312 0H0s.005-3.693 0-3.693h.979s-.002 1.487 0 1.477h1.976c0 .005-.004-1.478 0-1.477h.978s.004 3.686 0 3.693h-.978v-1.626c0 .005-1.976 0-1.976 0 0 .007-.002 1.625 0 1.626zm7.531-.001h-.977v-3.065H6.036s.002-.626 0-.627c.002.001 3.971 0 3.971 0v.627H8.51v3.065zm-3.801-3.692h.977v3.692h-.977v-3.692zm18.312 0H24v3.692h-.979v-3.692zm-11.537.627l-.681 1.68h1.361l-.68-1.68z"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 1.22 24.80 21.56" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 22.38H0l4-6.92h8zm8 0h8l-4-6.92h-8zm0-13.84l-4-6.92-4 6.92 4 6.92Z"/></svg>
+            </div>
+            <div class="brand-logo brand-logo--mark">
+              <svg class="brand-logo__svg" viewBox="-0.40 2.60 24.80 18.80" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.56 3C14.15 3 12.04 4.24 10.68 5.97L10.68 9.76C12.5 4.71 16.56 5.08 16.56 5.08C19.5 5.08 21.84 7.38 21.84 10.2C21.84 13.04 19.5 15.33 16.56 15.33A5.32 5.32 0 0 1 12.84 13.83L10.28 11.03A6.06 6.06 0 0 0 6.03 9.32C2.7 9.32 0 11.93 0 15.16C0 18.4 2.7 21 6.03 21C7.9 21 9.58 20.19 10.68 18.89L10.68 15.86C8.88 19.29 6.03 18.92 6.03 18.92C3.9 18.92 2.17 17.24 2.17 15.16C2.17 13.1 3.9 11.42 6.03 11.42C7.09 11.42 8.05 11.84 8.75 12.5L11.31 15.31A7.5 7.5 0 0 0 16.56 17.43C20.67 17.43 24 14.19 24 10.2C24 6.21 20.67 3 16.56 3Z"/></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================ FOOTER ============================ -->
+    <footer class="footer">
+      <div class="container footer__trust">
+        <div class="ftrust">
+          <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-shield-check" /></svg>
+          <span><b>Licensed &amp; insured</b><small>Fully covered workmanship</small></span>
+        </div>
+        <div class="ftrust">
+          <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-star" /></svg>
+          <span><b>4.9 / 5 rating</b><small>From 2,300+ Google reviews</small></span>
+        </div>
+        <div class="ftrust">
+          <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-users" /></svg>
+          <span><b>12,000+ homes served</b><small>Across every district</small></span>
+        </div>
+        <div class="ftrust">
+          <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-badge" /></svg>
+          <span><b>90-day warranty</b><small>On every repair &amp; part</small></span>
+        </div>
+      </div>
+
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#home" aria-label="Prime Tech Engineering home">
+            <svg class="brand__mark" viewBox="0 0 44 44" width="44" height="44" aria-hidden="true">
+              <rect width="44" height="44" rx="11" fill="#0E7C74" />
+              <path d="M11 21.6 22 12l11 9.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.6 20.4V31h14.8V20.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 22.6c2 2.6 3 4.4 3 5.6a3 3 0 0 1-6 0c0-1.2 1-3 3-5.6Z" fill="#fff" />
+            </svg>
+            <span class="brand__text">
+              <strong>Prime Tech</strong>
+              <small>Engineering</small>
+            </span>
+          </a>
+          <p>Your trusted partner for home appliance repair and plumbing services in Singapore.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-ig" /></svg></a>
+            <a href="#" aria-label="WhatsApp"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-wa" /></svg></a>
+            <a href="#" aria-label="Google reviews"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-google" /></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="#works">How It Works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#coverage">Coverage</a>
+        </div>
+
+        <div class="footer__col">
+          <h3>Our Services</h3>
+          <a href="#services">Washing Machine Repair</a>
+          <a href="#services">Refrigerator Repair</a>
+          <a href="#services">Plumbing Services</a>
+          <a href="#guarantee">Our Warranty</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+
+        <div class="footer__col footer__contact">
+          <h3>Contact Us</h3>
+          <a class="contact-line" href="tel:+6581234567"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-phone" /></svg>+65 8123 4567</a>
+          <a class="contact-line" href="mailto:hello@primetech.sg"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-mail" /></svg>hello@primetech.sg</a>
+          <p class="contact-line"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-pin" /></svg>Singapore 570100</p>
+          <p class="contact-line"><svg aria-hidden="true" focusable="false" class="ico"><use href="#i-clock" /></svg><span class="contact-line__txt"><span class="nb">Mon &ndash; Sun</span> &middot; <span class="nb">8AM &ndash; 8PM</span></span></p>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span class="footer__legal">
+          <svg aria-hidden="true" focusable="false" class="ico footer__seal"><use href="#i-shield-check" /></svg>
+          &copy; <span data-year>2024</span> Prime Tech Engineering Pte Ltd <span class="dot">&middot;</span> Licensed &amp; insured <span class="dot">&middot;</span> Singapore
+        </span>
+        <nav class="footer__meta" aria-label="Legal">
+          <a href="#">Privacy Policy</a>
+          <span class="dot">&middot;</span>
+          <a href="#">Terms of Service</a>
+          <a class="footer__top" href="#home">Back to top <svg aria-hidden="true" focusable="false" class="ico"><use href="#i-arrow" /></svg></a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
